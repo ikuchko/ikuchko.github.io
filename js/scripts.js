@@ -1,21 +1,19 @@
-var pingPong = function(userNumber){
-  var pingPongNumber;
-  if (userNumber % 3 === 0 && userNumber % 5 === 0) {
+var analizOfNumber = function(number){
+  var pingPongNumber = number;
+  if (number % 3 === 0 && number % 5 === 0) {
     pingPongNumber = "pingpong";
-  } else if (userNumber % 3 === 0) {
+  } else if (number % 3 === 0) {
       pingPongNumber = "ping";
-  } else if (userNumber % 5 === 0) {
+  } else if (number % 5 === 0) {
     pingPongNumber = "pong";
-  } else pingPongNumber = userNumber;
+  };
   return pingPongNumber;
-
-
 }
 
-var sequenceMaker = function (userNumber) {
+var pingPongSequence = function (userNumber) {
   var sequenceOfNumbers = [];
   for (var i = 1; i <= userNumber; i++ ) {
-    sequenceOfNumbers.push(pingPong(i));
+    sequenceOfNumbers.push(analizOfNumber(i));
   }
   return sequenceOfNumbers;
 }
