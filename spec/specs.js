@@ -21,6 +21,10 @@ describe("analizOfNumber", function() {
 });
 
 describe("pingPongSequence", function() {
+  it("array length must be equal to user input", function () {
+    expect(pingPongSequence(103)).to.have.length(103);
+  });
+
   it("chosen number must be equal to sequence of elements according rulls", function() {
     expect(pingPongSequence(16)).to.eql([1, 2, "ping", 4, "pong", "ping", 7, 8, "ping", "pong", 11, "ping", 13, 14, "pingpong", 16]);
   });
