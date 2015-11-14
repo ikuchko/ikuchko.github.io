@@ -1,6 +1,6 @@
-div.header {
+.header {
   text-align: center;
-  background-color: #EDDAB4;
+  background-color: #F5DFB3;
   padding: 40px 0 40px 0;
   margin: 0 0 0 0;
 }
@@ -8,18 +8,18 @@ h1 {
   font-size: 60px;
   font-weight: bold;
 }
-h2,h4 {
+h2,h3,h4 {
   font-weight: bold
 }
 .sidebar h4 {
-  color: #EDDAB4;
+  color: #FAE1B6;
 }
 .sidebar p {
   color: white;
 }
 .col-md-3 {
   margin: 30px 0 0px 0;
-  background-color: #91BF82;
+  background-color: #8FBC8E;
   padding-top: 10px;
   padding-bottom: 40%;
 }
@@ -30,5 +30,11 @@ h2,h4 {
 .container-fluid {
   margin-left: 0;
   margin-right: 0;
-  background: #DEDEDE;
+  background: #E6E6E6;
+}
+button#pingpong {
+  background-color: #BFBFBF;
+}
+div#result {
+  margin-top: 20px;
 }

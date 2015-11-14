@@ -1,4 +1,4 @@
-var analizOfNumber = function(number) {
+var analizOfNumber = function(number){
   var pingPongNumber = number;
   if (number % 3 === 0 && number % 5 === 0) {
     pingPongNumber = "pingpong";
@@ -21,10 +21,9 @@ var pingPongSequence = function (userNumber) {
 $(document).ready(function() {
   $("button#pingpong").click(function() {
     $("#result ul").children("li").remove();
-    var pingPongArray = [];
-    pingPongArray = pingPongSequence($("input#userInputNumber").val());
-    for (i=0; i<=pingPongArray.length-1; i++) {
-      $("#result ul").append("<li>"+pingPongArray[i]+"</li>");
-    }
+    var pingPongArray = pingPongSequence($("input#userInputNumber").val());
+    pingPongArray.forEach(function(pingPongArray){
+      $("#result ul").append("<li>"+pingPongArray+"</li>");
+    });
   });
 });
